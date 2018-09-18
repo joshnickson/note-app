@@ -4,24 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="note-controller.js"></script>
-
   <title>Document</title>
 </head>
 <body>
   <p id="test"></p>
   <div id="app">hello</div>
-  <script>
-  function changeGreeting() {
-  var elem = document.getElementById('app')
-  elem.innerHTML = "howdy"
-  }
-
-  changeGreeting()
-  </script>
+  <div id="list-items" >Help</div>
   <script src="note-model.js"></script>
   <script src="note-list-model.js"></script>
   <script src="note-list-view.js"></script>
+  <script src="note-controller.js"></script>
+  <script src="note-list-controller.js"></script>
   <script src="assert.js"></script>
   <script src="note-test.js"></script>
   <script src="note-list-test.js"></script>
