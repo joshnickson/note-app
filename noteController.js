@@ -1,3 +1,22 @@
+(function(exports){
+  function NoteController(){
+    this._noteModel = new NoteModel();
+    this._noteView = new NoteView();
+  }
+
+  
+
+
+})(this)
+
+
+function changeGreeting() {
+  var elem = document.getElementById('app')
+  elem.innerHTML = "howdy"
+}
+
+changeGreeting()
+
 function listItems() {
   
   var note1 = new Note('hello world')
