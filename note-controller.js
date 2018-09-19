@@ -8,7 +8,7 @@
 
   NoteController.prototype.listItems = function() {
     console.log('hello')
-    var note1 = new Note('hello world')
+    var note1 = new Note('haribo')
     var note2 = new Note('congee')
     var note3 = new Note('door')
 
@@ -24,4 +24,3 @@
 
   exports.NoteController = NoteController
 })(this)
-

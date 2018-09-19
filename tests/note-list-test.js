@@ -4,7 +4,5 @@
     noteList.add('new note')
     assert.isTrue(noteList.notes.includes('new note'))
   }  
-
   testNotesListView()
-
 })(this)
