@@ -9,6 +9,6 @@
     htmls.push(`</ul>`)
     return htmls.join('')
   }
-  exports.NoteListView = NoteListView
 
+  exports.NoteListView = NoteListView
 })(this)
