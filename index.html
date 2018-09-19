@@ -8,7 +8,6 @@
 </head>
 <body>
   <p id="test"></p>
-  <div id="app">hello</div>
   <div id="list-items" >Help</div>
   
   <!-- ___MVC___ -->
@@ -16,7 +15,12 @@
   <script src="note-list-model.js"></script>
   <script src="note-list-view.js"></script>
   <script src="note-controller.js"></script>
-    
+
+  <script type="text/javascript">
+    var controller = new NoteController()
+    controller.listItems();
+  </script>
+
   <!-- ___TESTS___ -->
   <script src="tests/assert.js"></script>
   <script src="tests/note-test.js"></script>
