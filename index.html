@@ -8,25 +8,15 @@
 </head>
 <body>
   <p id="test"></p>
-  <div id="list-items" >Help</div>
+  <div id="list-items" ></div>
   
   <!-- ___MVC___ -->
   <script src="note-model.js"></script>
   <script src="note-list-model.js"></script>
   <script src="note-list-view.js"></script>
   <script src="note-controller.js"></script>
+  <script src="single-note-view.js"></script>
 
-  <script type="text/javascript">
-    var noteList = new NoteListModel()
-    var note1 = new Note('haribo')
-    var note2 = new Note('congee')
-    var note3 = new Note('door')
-    noteList.add(note1.text)
-    noteList.add(note2.text)
-    noteList.add(note3.text)
-    var controller = new NoteController(noteList)
-    controller.listItems();
-  </script>
 
   <!-- ___TESTS___ -->
   <script src="tests/assert.js"></script>
@@ -34,6 +24,26 @@
   <script src="tests/note-list-test.js"></script>
   <script src="tests/note-list-view-test.js"></script>
   <script src="tests/note-controller-test.js"></script>
+  <script src="tests/single-note-view-test.js"></script>
+
+  <script type="text/javascript">
+    var noteList = new NoteListModel()
+    var note1 = new Note(`After all there’s a lot in that vegetarian fine flavour of things 
+                          from the earth garlic of course it stinks after Italian organgrinders 
+                          crisp of onions mushrooms truffles`)
+    var note2 = new Note(`Sardines on the shelves. Almost taste them by looking. Sandwich? Ham 
+                          and his descendants musterred and bred there. Potted meats. What is 
+                          home without Plumtree’s potted meat? Incomplete. What a stupid ad! 
+                          Under the obituary notices they stuck it. All up a plumtree.`)
+    var note3 = new Note(`Look at his mouth. Could whistle in his own ear. Flap ears to match. 
+                          Music. Knows as much about it as my coachman. Still better tell him. 
+                          Does no harm. Free ad.`)
+    noteList.add(note1.text)
+    noteList.add(note2.text)
+    noteList.add(note3.text)
+    var controller = new NoteController(noteList)
+    controller.listItems();
+  </script>
 
 </body>
 </html>

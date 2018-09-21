@@ -1,8 +1,8 @@
 (function (exports) {
-  function testNotesListView() {
+  function testNotesListModel() {
     var noteList = new NoteListModel
     noteList.add('new note')
-    assert.isTrue(noteList.notes.includes('new note'))
+    assert.isTrue(noteList.notes.pop().text === 'new note')
   }  
-  testNotesListView()
+  testNotesListModel()
 })(this)
